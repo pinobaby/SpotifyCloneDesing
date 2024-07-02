@@ -1,16 +1,18 @@
 <script lang="ts">
-import { defineComponent } from 'vue';
-import Sidebar from './components/Sidebar.vue';
-import Navbar from './components/Navbar.vue';
-import Home from './views/Home.vue';
+import { defineComponent } from "vue";
+import Sidebar from "./components/Sidebar.vue";
+import Navbar from "./components/Navbar.vue";
+import Home from "./views/Home.vue";
+import Footer from "./components/Footer.vue";
 
 export default defineComponent({
-  name: 'App',
+  name: "App",
   components: {
     Sidebar,
     Navbar,
-   Home
-  }
+    Home,
+    Footer,
+  },
 });
 </script>
 
@@ -22,6 +24,7 @@ export default defineComponent({
       <div class="content flex-grow overflow-y-auto">
         <router-view />
         <Home />
+        <Footer />
       </div>
     </div>
   </div>
@@ -35,7 +38,7 @@ export default defineComponent({
 }
 
 .sidebar {
-  width: 15rem; 
+  width: 15rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -60,15 +63,15 @@ export default defineComponent({
 }
 
 .content::-webkit-scrollbar-track {
-  background: #1e1e1e; 
+  background: #1e1e1e;
 }
 
 .content::-webkit-scrollbar-thumb {
-  background: #888; 
+  background: #888;
   border-radius: 4px;
 }
 
 .content::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
 }
 </style>

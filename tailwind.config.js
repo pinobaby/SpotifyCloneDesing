@@ -14,7 +14,8 @@ module.exports = {
           lightgray: '#B3B3B3',
           button:'#040404',
           cardSideBar:'#242424',
-          colorbutton:'#121212'
+          colorbutton:'#121212',
+          backgroundMainContent:'#121212',
         }
       },
     },
