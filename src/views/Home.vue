@@ -1,25 +1,16 @@
-<script lang="ts">
-import { defineComponent } from "vue";
-import PopularArtists from "../components/PopularArtists.vue";
-import PopularAlbums from "../components/PopularAlbums.vue";
-import PopularRadio from "../components/PopularRadio.vue";
-
-export default defineComponent({
-  name: "Home",
-  components: {
-    PopularArtists,
-    PopularAlbums,
-    PopularRadio,
-  },
-});
-</script>
 <template>
-  <div class="home bg-spotify-backgroundMainContent mb">
+  <div class="home bg-spotify-backgroundMainContent mb-2">
     <PopularArtists />
     <PopularAlbums />
     <PopularRadio />
   </div>
 </template>
+
+<script setup lang="ts">
+import PopularArtists from '../components/PopularArtists.vue';
+import PopularAlbums from '../components/PopularAlbums.vue';
+import PopularRadio from '../components/PopularRadio.vue';
+</script>
 
 <style scoped>
 .home {

@@ -1,21 +1,3 @@
-<script lang="ts">
-import { defineComponent } from "vue";
-import Sidebar from "./components/Sidebar.vue";
-import Navbar from "./components/Navbar.vue";
-import Home from "./views/Home.vue";
-import Footer from "./components/Footer.vue";
-
-export default defineComponent({
-  name: "App",
-  components: {
-    Sidebar,
-    Navbar,
-    Home,
-    Footer,
-  },
-});
-</script>
-
 <template>
   <div class="app-container">
     <Sidebar />
@@ -23,12 +5,17 @@ export default defineComponent({
       <Navbar />
       <div class="content flex-grow overflow-y-auto">
         <router-view />
-        <Home />
         <Footer />
       </div>
     </div>
   </div>
 </template>
+
+<script lang="ts" setup>
+import Sidebar from './components/Sidebar.vue';
+import Navbar from './components/Navbar.vue';
+import Footer from './components/Footer.vue';
+</script>
 
 <style scoped>
 .app-container {
@@ -75,3 +62,4 @@ export default defineComponent({
   background: #555;
 }
 </style>
+

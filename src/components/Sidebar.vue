@@ -25,41 +25,30 @@
             <stackIcon class="h-3 w-8 mt-0.5" />
             <span class="text-xs font-semibold mb-3 -ml-4">Your Library</span>
           </div>
-          <router-link to="/search" class="py-2 flex items-center space-x-2">
-          </router-link>
 
-          <div
-            class="bg-spotify-cardSideBar rounded-md p-3 text-left text-xs -ml-2 -mr-2"
-          >
+          <div class="bg-spotify-cardSideBar rounded-md p-3 text-left text-xs -ml-2 -mr-2">
             Create your first playlist
             <div class="text-spotify-lightgray text-xs">
               It's easy, we'll help you
             </div>
-            <button
-              class="mt-2 bg-spotify-white text-spotify-black rounded-full px-3 py-0 inline-block text-xs"
-            >
+            <button class="mt-2 bg-spotify-white text-spotify-black rounded-full px-3 py-0 inline-block text-xs">
               Create playlist
             </button>
           </div>
         </div>
+
         <div class="w-full bg-spotify-gray rounded-md p-4 text-left text-xs">
-          <div
-            class="bg-spotify-cardSideBar rounded-md p-4 text-left text-xs -ml-2 -mr-2 mb-16"
-          >
+          <div class="bg-spotify-cardSideBar rounded-md p-4 text-left text-xs -ml-2 -mr-2 mb-16">
             Let's find some podcasts to follow
             <div class="text-spotify-lightgray text-xs">
               We'll keep you updated on new episodes
             </div>
-            <button
-              class="mt-2 bg-spotify-white text-spotify-black text-xs rounded-full px-2 py-0 inline-block"
-            >
+            <button class="mt-2 bg-spotify-white text-spotify-black text-xs rounded-full px-2 py-0 inline-block">
               Browse podcasts
             </button>
           </div>
 
-          <div
-            class="flex flex-wrap space-x-3 text-xs text-spotify-lightgray text-start"
-          >
+          <div class="flex flex-wrap space-x-3 text-xs text-spotify-lightgray text-start">
             <div>Legal</div>
             <div>Safety & Privacy Center</div>
             <div>Privacy Policy</div>
@@ -70,9 +59,7 @@
           </div>
 
           <div class="flex mt-4">
-            <button
-              class="flex bg-spotify-colorbutton text-white rounded-full px-2 py-0 outline outline-offset-2 outline-1 text-xs"
-            >
+            <button class="flex bg-spotify-colorbutton text-white rounded-full px-2 py-0 outline outline-offset-2 outline-1 text-xs">
               <GlobeAltIcon class="h-3 w-3 mt-0.5" />
               English
             </button>
@@ -83,26 +70,10 @@
   </div>
 </template>
 
-<script lang="ts">
-import {
-  HomeIcon,
-  MagnifyingGlassIcon,
-  GlobeAltIcon,
-} from "@heroicons/vue/16/solid";
-import { defineComponent } from "vue";
+<script setup lang="ts">
+import { HomeIcon, MagnifyingGlassIcon, GlobeAltIcon } from "@heroicons/vue/16/solid";
 import SpotifyLogo from "./SpotifyLogo.vue";
 import stackIcon from "./stackIcon.vue";
-
-export default defineComponent({
-  name: "Sidebar",
-  components: {
-    HomeIcon,
-    MagnifyingGlassIcon,
-    SpotifyLogo,
-    stackIcon,
-    GlobeAltIcon,
-  },
-});
 </script>
 
 <style scoped>
@@ -110,5 +81,5 @@ export default defineComponent({
   font-size: 0.55rem;
   line-height: 1rem;
 }
-
 </style>
+
