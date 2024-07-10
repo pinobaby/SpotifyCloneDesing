@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-spotify-colorbutton text-spotify-white py-5 -mt-2">
+  <footer class="bg-spotify-colorbutton text-spotify-white py-5 -mt-2  overflow-x-hidden">
     <div class="container grid grid-cols-4 gap-8 px-4">
       <div class="space-y-2">
         <h2 class="text-xs font-bold">Company</h2>

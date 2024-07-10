@@ -1,6 +1,6 @@
 <template>
     <div
-      class="bg-spotify-gray text-spotify-white p-3 flex justify-between items-center mt-2 rounded-md shadow-md"
+      class="bg-spotify-gray text-spotify-white p-3 flex justify-between items-center mt-2 rounded-md shadow-md  overflow-x-hidden"
     >
       <div class="flex space-x-0">
         <router-link

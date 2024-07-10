@@ -49,14 +49,12 @@ const isFullScreen = computed(() => {
   display: block;
   height: 100vh;
   overflow-y: auto;
-  overflow-x: hidden;
-}
-
-.main-content {
+  overflow-x: hidden;  
   flex-grow: 1;
-  overflow-y: auto;
   height: auto;
 }
+
+
 
 .main-content::-webkit-scrollbar {
   width: 6px;

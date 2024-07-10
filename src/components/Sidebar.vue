@@ -1,5 +1,5 @@
 <template>
-  <div class="sidebar w-1/4 text-spotify-white h-screen p-2 flex flex-col fixed">
+  <div class="sidebar w-1/4 text-spotify-white h-screen p-2 flex flex-col fixed  overflow-x-hidden">
     <div class="mb-2 bg-spotify-gray rounded-md pl-2">
       <nav class="space-y-0">
         <router-link to="/" class="py-2 flex items-center space-x-2">
