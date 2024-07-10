@@ -8,7 +8,7 @@ import { getStorage } from "firebase/storage";
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyD_FYxEu38lYPF-xK_S6-MLIdT9amBVjDc",
+  apiKey: "API_KEY",
   authDomain: "backend-spotify-be91b.firebaseapp.com",
   databaseURL: "https://backend-spotify-be91b-default-rtdb.firebaseio.com",
   projectId: "backend-spotify-be91b",
