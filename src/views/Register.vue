@@ -82,10 +82,8 @@ const email = ref("");
 
 const handleSubmit = () => {
   console.log("Email:", email.value);
-  // Aquí puedes agregar la lógica para el envío del formulario
 };
 </script>
 
 <style scoped>
-/* Aquí puedes agregar estilos adicionales si es necesario */
 </style>

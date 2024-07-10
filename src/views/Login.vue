@@ -158,7 +158,6 @@ const password = ref("");
 const handleSubmit = () => {
   console.log("Email:", email.value);
   console.log("Password:", password.value);
-  // Aquí puedes agregar la lógica para el envío del formulario
 };
 </script>
 
