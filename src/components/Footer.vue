@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-spotify-colorbutton text-spotify-white py-8">
+  <footer class="bg-spotify-colorbutton text-spotify-white py-5 -mt-2">
     <div class="container grid grid-cols-4 gap-8 px-4">
       <div class="space-y-2">
         <h2 class="text-xs font-bold">Company</h2>
@@ -39,17 +39,6 @@
     </div>
     <div class="container mx-auto mt-8 flex justify-between items-center border-t border-spotify-gray pt-4">
       <p class="text-xs mx-4">&copy; 2024 Spotify AB</p>
-      <!-- <div class="flex space-x-4">
-            <a href="#" class="text-white" aria-label="Instagram">
-              <InstagramIcon class="w-6 h-6" />
-            </a>
-            <a href="#" class="text-white" aria-label="Twitter">
-              <TwitterIcon class="w-6 h-6" />
-            </a>
-            <a href="#" class="text-white" aria-label="Facebook">
-              <FacebookIcon class="w-6 h-6" />
-            </a>
-          </div> -->
     </div>
   </footer>
 </template>

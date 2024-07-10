@@ -1,8 +1,16 @@
 <template>
-  <div class="home bg-spotify-backgroundMainContent mb-2">
+  <div class="home bg-spotify-backgroundMainContent mb-2 overflow-x-hidden">
+    <PopularArtists />
+    <PopularArtists />
     <PopularArtists />
     <PopularAlbums />
+    <PopularAlbums />
+    <PopularAlbums />
+    <PopularAlbums />
     <PopularRadio />
+    <PopularRadio />
+    <PopularRadio />
+    
   </div>
 </template>
 

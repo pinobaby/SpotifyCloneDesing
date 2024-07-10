@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen flex flex-col items-center justify-center bg-spotify-backgroundMainContent text-white">
+  <div class=" min-h-screen flex f flex-col items-center justify-center bg-spotify-backgroundMainContent text-white">
     <div class="max-w-md w-full space-y-8 p-10 bg-spotify-backgroundMainContent rounded-lg sm:max-w-lg lg:max-w-2xl">
       <div>
         <img class="mx-auto h-12 w-auto" src="../assets/spotifyLogo.png" alt="Spotify" />
@@ -86,4 +86,9 @@ const handleSubmit = () => {
 </script>
 
 <style scoped>
+.sig-up-container {
+  display: block;
+  height: 100vh;
+  overflow: hidden;
+}
 </style>

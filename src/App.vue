@@ -1,7 +1,6 @@
 <template>
   <div class="app-container">
     <Sidebar v-if="!isFullScreen" />
-    
     <div class="main-content">
       <div :class="{ 'full-screen': isFullScreen }">
       <Navbar v-if="!isFullScreen" />
@@ -28,14 +27,19 @@ const isFullScreen = computed(() => {
 
 <style scoped>
 .app-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+.signup-container {
   display: block;
   height: 100vh;
   overflow: hidden;
 }
 
 .sidebar {
-  width: 15rem;
-  position: fixed;
+  width: 30rem;
+  position: relative;
   top: 0;
   left: 0;
   height: 100%;
@@ -44,28 +48,30 @@ const isFullScreen = computed(() => {
 .main-content {
   display: block;
   height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
-.content {
+.main-content {
   flex-grow: 1;
   overflow-y: auto;
   height: auto;
 }
 
-.content::-webkit-scrollbar {
+.main-content::-webkit-scrollbar {
   width: 6px;
 }
 
-.content::-webkit-scrollbar-track {
+.main-content::-webkit-scrollbar-track {
   background: #1e1e1e;
 }
 
-.content::-webkit-scrollbar-thumb {
+.main-content::-webkit-scrollbar-thumb {
   background: #888;
   border-radius: 4px;
 }
 
-.content::-webkit-scrollbar-thumb:hover {
+.main-content::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
 </style>

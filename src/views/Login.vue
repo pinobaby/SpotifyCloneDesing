@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-screen h-screen flex flex-col items-center justify-center bg-spotify-gradient text-white"
+    class="w-screen h-screen flex flex-col items-center justify-center bg-spotify-gradient text-white overflow-x-hidden"
   >
     <div
       class="max-w-md w-auto space-y-8 p-10 bg-spotify-backgroundMainContent rounded-lg shadow-lg sm:max-w-lg lg:max-w-2xl"
@@ -165,6 +165,6 @@ const handleSubmit = () => {
 .login-container {
   display: flex;
   height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 </style>
