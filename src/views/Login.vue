@@ -270,7 +270,7 @@ const router = useRouter();
 const handleGoogleLogin = async () => {
   try {
     await signInWithGoogle();
-    router.push('/home'); 
+    router.push('/'); 
   } catch (error) {
     console.error('Error logging in with Google:', error);
     alert('Failed to log in with Google. Please try again.');
@@ -280,7 +280,7 @@ const handleGoogleLogin = async () => {
 const handleFacebookLogin = async () => {
   try {
     await signInWithFacebook();
-    router.push('/home'); 
+    router.push('/'); 
   } catch (error) {
     console.error('Error logging in with Facebook:', error);
     alert('Failed to log in with Facebook. Please try again.');
@@ -290,7 +290,7 @@ const handleFacebookLogin = async () => {
 const handleAppleLogin = async () => {
   try {
     await signInWithApple();
-    router.push('/home'); 
+    router.push('/'); 
   } catch (error) {
     console.error('Error logging in with Apple:', error);
     alert('Failed to log in with Apple. Please try again.');
@@ -302,7 +302,7 @@ const handleSubmit = async () => {
     // Implement your email/password login logic here
     console.log("Email:", email.value);
     console.log("Password:", password.value);
-    router.push('/home'); 
+    router.push('/'); 
   } catch (error) {
     console.error('Error logging in:', error);
     alert('Failed to log in. Please try again.');
